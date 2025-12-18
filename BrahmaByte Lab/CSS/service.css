@@ -1,0 +1,149 @@
+/* --------SERVICE HERO SECTION------------ */
+
+.service-hero-section {
+  position: relative;
+}
+
+.service-hero-image {
+  height: calc(100vh - 75px);
+  width: 100%;
+}
+.service-hero-image img {
+  height: calc(100vh - 75px);
+  width: 100%;
+  object-fit: cover;
+}
+.service-hero-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 29, 49, 0.651);
+  height: calc(100vh - 75px);
+  width: 100%;
+}
+.service-hero-container {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.service-hero-text h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: var(--secondary-color);
+  font-weight: 200;
+  max-width: 400px;
+  margin: 0 0 40px 0;
+}
+
+.service-hero-text span {
+  font-weight: bold;
+}
+
+/* ------SERVICE SECTION TWO---------- */
+.service-section-two {
+  padding: 1vw 4vw;
+  background-color: var(--content-bg);
+}
+.section-two-container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.service-two-heading h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  /* text-align: center; */
+  margin: 20px 0;
+}
+.service-two-p {
+  width: 80%;
+  line-height: 1.5rem;
+}
+
+/* copied from style.css */
+.left-right-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0;
+  padding: 20px 0;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.six-left {
+  width: 50%;
+}
+.six-left-title h3 {
+  font-size: 2.1rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+.six-left-p {
+  color: var(--primary-color);
+  width: 80%;
+}
+.six-right {
+  width: 30%;
+}
+
+.right-image-container {
+  height: 300px;
+  width: 350px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.right-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* -----css from ems site for counter----- */
+/* counter section */
+.home-section-two {
+  padding: 5vw 8vw;
+}
+.section-two-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section-two-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.section-two-box {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.section-two-box p {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.count-box {
+  position: relative;
+}
+
+#counter-plus {
+  color: var(--other-color);
+}
+
+.count-box h5 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}

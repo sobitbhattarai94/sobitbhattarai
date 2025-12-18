@@ -1,0 +1,447 @@
+/*
+the default css (anchor decorations, ul deco, utility classes, color variables
+etc and the header footer style is in separate page (header-footer.css)
+*/
+
+/* -------HOME HERO SECTION-------------- */
+.hero-section {
+  padding: 1vw 4vw;
+  background-color: #011d31;
+  height: calc(100vh - 75px);
+  width: 100%;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.left-h3 {
+  font-size: x-small;
+  font-weight: 100;
+  color: var(--content-bg);
+  letter-spacing: 1.2px;
+}
+.left-h2 > h2 {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  font-weight: 100;
+  margin: 18px 0;
+}
+.left-h2 span {
+  font-weight: 700;
+}
+.hero-left p {
+  color: var(--content-bg);
+  margin: 0 0 28px 0;
+  line-height: 1.5rem;
+}
+
+.hero-right {
+  width: 50%;
+  height: calc(100vh - 95px);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.hero-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+.hero-right img:hover {
+  filter: grayscale(0);
+}
+
+/* ---------HOME SECTION TWO------------------ */
+.home-section-two {
+  padding: 1vw 4vw;
+  background-color: var(--content-bg);
+}
+.home-two-container {
+  padding: 3vw 0;
+  width: 100%;
+}
+
+.home-two-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.service-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0;
+  gap: 10px;
+  background-color: var(--content-bg);
+}
+
+.card {
+  width: 280px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-out;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+.card-icon {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.card-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card-heading h3 {
+  margin: 20px 0;
+}
+.card-heading h3 a {
+  color: var(--primary-color);
+}
+.card-desc p {
+  color: #001828;
+  line-height: 1.3rem;
+}
+
+/* -------HOME SECTION THREE---------------- */
+.home-section-three {
+  padding: 1vw 4vw;
+  overflow: hidden;
+}
+.home-three-container {
+  padding: 3vw 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.three-left {
+  width: 55%;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.three-left img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.three-right {
+  width: 40%;
+  z-index: 5;
+  padding: 10px;
+}
+.three-right-h2 h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: var(--primary-color);
+  margin: 0 0 40px 0;
+  z-index: 5;
+}
+.three-right-p p {
+  color: #001828;
+  line-height: 1.5rem;
+  z-index: 5;
+}
+/* MOVING IMAGE IN HOME THREE */
+.ani-shape {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  animation: forDiv 12s infinite ease-out 0s alternate-reverse;
+}
+.ani-shape img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  z-index: -4;
+  animation: forImage 18s infinite linear 0s;
+}
+
+@keyframes forImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes forDiv {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* ------HOME SECTION FOUR-------- */
+
+.home-four-container {
+  display: flex;
+  padding: 0 3vw;
+  justify-content: space-around;
+  align-items: center;
+  height: 40vh;
+  background-color: #0a4570dc;
+}
+.four-text h3 {
+  font-size: 2.1rem;
+  font-weight: 200;
+  color: white;
+}
+.four-text h3 span {
+  font-weight: bold;
+}
+
+.hire a {
+  background-color: var(--btn-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  border: 1px solid transparent;
+  transition: all 0.2s ease-out;
+}
+
+.hire a:hover {
+  background-color: transparent;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+}
+
+/* ----------HOME SECTION FIVE-------------- */
+.home-section-five {
+  padding: 5vw 4vw;
+  background-color: var(--content-bg);
+}
+
+.five-header h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+.five-header span {
+  font-weight: bold;
+}
+/* .approach-card-container {
+  border: 1px solid black;
+} */
+.approach-card {
+  background-color: white;
+  padding: 2vw 1vw;
+  width: 85%;
+  min-height: 30vh;
+  border-radius: 5px;
+  color: var(--primary-color);
+  position: relative;
+  margin: 30px auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-out;
+}
+
+.approach-card-desc p {
+  line-height: 1.5rem;
+  letter-spacing: 1.1px;
+  margin-top: 20px;
+}
+.approach-icon {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: var(--content-bg);
+  font-size: 1.2rem;
+}
+
+.approach-card-sec {
+  background-color: white;
+  padding: 2vw 1vw;
+  width: 85%;
+  min-height: 30vh;
+  border-radius: 5px;
+  color: var(--primary-color);
+  position: relative;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-out;
+}
+
+.approach-card-desc p {
+  line-height: 1.5rem;
+  letter-spacing: 1.1px;
+  margin-top: 20px;
+}
+
+.approach-icon-sec {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background-color: var(--content-bg);
+  font-size: 1.2rem;
+}
+
+.approach-card:hover {
+  transform: scale(1.02);
+}
+.approach-card-sec:hover {
+  transform: scale(1.02);
+}
+
+/* -------HOME SECTION SIX-------- */
+.home-section-six {
+  padding: 1vw 4vw;
+  background-color: white;
+}
+.six-header h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin: 70px 0;
+}
+.six-header span {
+  font-weight: bold;
+}
+
+.left-right-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0;
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.six-left {
+  width: 50%;
+}
+.six-left-title h3 {
+  font-size: 2.1rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+.six-left-p {
+  color: var(--primary-color);
+  width: 80%;
+}
+.six-right {
+  width: 30%;
+}
+
+.right-image-container {
+  height: 120px;
+  width: 120px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.right-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* --------FOOTER SECTION----------- */
+
+footer {
+  background: var(--primary-color);
+  padding: 1vw 4vw;
+  color: white;
+}
+
+.footer-one {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+}
+#col-one {
+  width: 30%;
+}
+.col-one-p {
+  font-size: 0.8rem;
+  width: 80%;
+  line-height: 1.3rem;
+  margin: 10px 0;
+}
+.column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  margin: 10px 0;
+}
+.footer-link a {
+  padding: 12px 0;
+  color: white;
+  transition: all 0.2s ease-out;
+}
+.footer-link a:hover {
+  color: var(--secondary-color);
+}
+.cont-adrs-text {
+  margin: 12px 0;
+}
+
+.footer-icons a {
+  font-size: 1.5rem;
+  color: white;
+  padding: 5px;
+  transition: all 0.2s ease-out;
+}
+.footer-icons a:hover {
+  color: var(--secondary-color);
+}
+.footer-two {
+  text-align: center;
+  padding: 10px 0;
+}
