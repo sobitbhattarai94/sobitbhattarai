@@ -296,7 +296,8 @@ h3.my-profession{
     /* background-color: red; */
     text-align: center;
     position: relative;
-}.home-img::after{
+}
+.home-img::after{
     content: '';
     position: absolute;
     height: 80px;
@@ -381,6 +382,7 @@ h3.my-profession{
     margin-left: 4px;
     display: inline-block;
 
+    /* background: red; */
 }
 .about .about-content .personal-info .buttons{
     margin-top: 30px;
@@ -731,13 +733,26 @@ h3.my-profession{
         max-width: 100%;
     }
     .home .home-img{
-        display: none;
+        display: block;
+        height: 100px;
+        margin: 50px 0 250px;
     }
     .service .service-item,
     .portfolio .portfolio-item,
     .contact .contact-info-item{
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    .home-img::after{
+        display: none;
+    }
+    .home-img::before{
+        display: none;
+    }
+    #url{
+        
+        width: 130px;
+        overflow-wrap: anywhere;
     }
 }
 
